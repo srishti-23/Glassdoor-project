@@ -4,7 +4,7 @@ import img from "../assets/companybg.jpg";
 import salary1 from "../assets/salary1.webp";
 import sal2 from "../assets/sal2.webp";
 import sal3 from "../assets/sal3.png";
-import {Mdsearch} from "react-icons/md"
+
 //Salary page for navbar
 const Salary = () => {
   return (
@@ -29,7 +29,7 @@ const Salary = () => {
             placeholder="Your job title..."
             className="absolute mt-[-180px] ml-[550px] rounded bg-white border border-gray-300"
           />
-          <Mdsearch className="bg-green-400"/>
+       
         </div>
         
         <div className="flex">
