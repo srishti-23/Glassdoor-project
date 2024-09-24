@@ -12,21 +12,28 @@ import axios from "axios";
 
 
 export const baseapi=async(endpoint)=>{
-    const options = {
-        method: 'GET',
-        url: `https://jsearch.p.rapidapi.com${endpoint}`,
-        params: {
-          query: 'Node.js developer in New-York,USA',
-          page: '1',
-          num_pages: '1',
-          date_posted: 'all'
-        },
-        headers: {
-          'x-rapidapi-key': '93ddc6f045msh1f44c4c086b44d6p128e74jsn39785836b621',
-          'x-rapidapi-host': 'jsearch.p.rapidapi.com',
-          'Content-Type':'application/json'
-        }
-      };
+
+
+const options = {
+  method: 'GET',
+  url: 'https://jsearch.p.rapidapi.com/estimated-salary',
+  params: {
+    job_title: 'NodeJS Developer',
+    location: 'New-York, NY, USA',
+    radius: '100'
+  },
+  headers: {
+    'x-rapidapi-key': '3b5b88e73emsh2839fd2ca578003p166e2ejsnbcf4097fd0eb',
+    'x-rapidapi-host': 'jsearch.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
     try {
         const response = await axios.request(options);
         console.log(response.data);
