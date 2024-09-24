@@ -4,7 +4,7 @@ This is a frontend Capstone project given by the Almabetter which is online job 
 
 ## Deployment
 
-[Click Here]() to see my glassdoor website.
+To view-https://glassdoorproject.netlify.app
 
 ## Run Locally
 
@@ -77,4 +77,4 @@ This project is created with mainly React js, In this project mainly we have mul
 - you can coneect to Glassdoor from dofferent sites
   
 
-To view-https://glassdoorproject.netlify.app
+
